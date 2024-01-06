@@ -30,6 +30,7 @@
 "..\..\output\bsp_led.o"
 "..\..\output\bsp_usart.o"
 "..\..\output\delay.o"
+"..\..\output\bsp_oled.o"
 "..\..\output\port.o"
 "..\..\output\heap_4.o"
 "..\..\output\croutine.o"

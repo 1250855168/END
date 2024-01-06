@@ -3,8 +3,6 @@
 #include<bsp_delay.h>
 #include "codetab.h"			//字库头文件
 
-extern void Delay(__IO uint32_t nCount);	
-
 #define  OLED_Address   0X78
 
 void I2C_Configuration(void)
