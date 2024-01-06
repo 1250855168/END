@@ -41,3 +41,4 @@
 ..\..\output\main.o: ..\..\FreeRTOS\include\task.h
 ..\..\output\main.o: ..\..\FreeRTOS\include\list.h
 ..\..\output\main.o: ..\..\User\led\bsp_led.h
+..\..\output\main.o: ..\..\User\led\delay.h
