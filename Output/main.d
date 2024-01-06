@@ -43,3 +43,4 @@
 ..\..\output\main.o: ..\..\User\led\bsp_led.h
 ..\..\output\main.o: ..\..\User\led\delay.h
 ..\..\output\main.o: ..\..\User\led\bsp_oled.h
+..\..\output\main.o: ..\..\User\led\bsp_w25q64.h
