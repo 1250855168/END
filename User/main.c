@@ -8,7 +8,11 @@
 #include "delay.h"
 #include "bsp_oled.h"
 #include "bsp_w25q64.h"
-uint16_t W25Q128_ID=0;
+
+uint8_t Write_data[20] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
+
+uint8_t Read_data[20];
+
 int main(void)
 {
 
@@ -27,16 +31,20 @@ int main(void)
 	OLED_Fill(0);
 
 	SPI1_Init();
-       
- uint16_t  W25Q128_ID=W25Q128_ReadID();
+
+	W25Q128_Erase_Chip();
+	uint16_t W25Q64_ID = W25Q128_ReadID();
+	W25Q128_Write_Page(Write_data,0x00,20);
+	W25Q128_Read(Read_data, 0x00,20);
 
 	unsigned char ch[] = "1234567";
 
 	OLED_ShowStr(1, 1, ch, 1);
 
+
 	while (1)
 	{
-		printf("\nW25Q128_ID=0x%X\r\n",W25Q128_ID);
+		
 	}
 }
 

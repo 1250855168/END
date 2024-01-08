@@ -45,17 +45,17 @@ void SPI1_Init(void);//初始化SPI
  void W25Q128_Write_Enable(void);//写使能
  void W25Q128_Write_Disable(void);//禁止写入        
 
-// void W25Q128_Read(uint8_t* pBuffer,uint32_t ReadAddr,uint16_t NumByteToRead); //读取数据
-// void W25Q128_Write_Page(uint8_t* pBuffer,uint32_t WriteAddr,uint16_t NumByteToWrite);//页写
-// void W25Q128_Write_NoCheck(uint8_t* pBuffer,uint32_t WriteAddr,uint16_t NumByteToWrite);//无检验写数据，可自动翻页
-// void W25Q128_Write(uint8_t* pBuffer,uint32_t WriteAddr,uint16_t NumByteToWrite);//写入数据，带擦写功能
+void W25Q128_Read(uint8_t* pBuffer,uint32_t ReadAddr,uint16_t NumByteToRead); //读取数据
+void W25Q128_Write_Page(uint8_t* pBuffer,uint32_t WriteAddr,uint16_t NumByteToWrite);//页写
+void W25Q128_Write_NoCheck(uint8_t* pBuffer,uint32_t WriteAddr,uint16_t NumByteToWrite);//无检验写数据，可自动翻页
+ void W25Q128_Write(uint8_t* pBuffer,uint32_t WriteAddr,uint16_t NumByteToWrite);//写入数据，带擦写功能
 
-// void W25Q128_Erase_Sector(uint32_t Dst_Addr);//擦除扇区
-// void W25Q128_Erase_Chip(void);//擦除整个芯片        
+void W25Q128_Erase_Sector(uint32_t Dst_Addr);//擦除扇区
+void W25Q128_Erase_Chip(void);//擦除整个芯片        
 
-// void W25Q128_Wait_Busy(void);//等待空闲
-// void W25Q128_PowerDown(void); //进入掉电模式
-// void W25Q128_WAKEUP(void);//掉电唤醒
+void W25Q128_Wait_Busy(void);//等待空闲
+void W25Q128_PowerDown(void); //进入掉电模式
+void W25Q128_WAKEUP(void);//掉电唤醒
 
 uint8_t SPI1_ReadWriteByte(uint8_t TxData);//写一个字节
 
