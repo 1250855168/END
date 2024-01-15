@@ -3,7 +3,13 @@
 
 #include "stm32f10x.h"
 
+// ADC读取温度值
+float readTemperature();
 
+// 设置PWM输出
+void setPWM(uint16_t dutyCycle);
 
+// PID控制器计算
+float pidController(float target, float current)
 
 #endif

@@ -98,4 +98,5 @@ void bsp_pwm_init(void)
 	
 	TIM_Cmd(TIM1, ENABLE);
 	TIM_CtrlPWMOutputs(TIM1, ENABLE);
+	
 }

@@ -49,8 +49,6 @@ int main(void)
 
 	bsp_pwm_init();
 
-	//GPIOB->BSRR = GPIO_Pin_12;  //设置为 高电平 开启刹车 关闭PWM
-
 	while (1)
 	{
 		

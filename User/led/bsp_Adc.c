@@ -44,8 +44,9 @@ void Adc_Init()
 volatile uint16_t ADC_ConvertedValue[2];     // ADC采样的数据
 #define ADC1_DR_Address ((u32)0x4001244C) // ADC1的地址
 
-float adc_v_Temp;
 u16 V;
+u16 adc_light;
+u16 adc_temp;
 
 // DMA1配置
 void DMA1_Init()
@@ -85,14 +86,12 @@ void DMA1_Channel1_IRQHandler(void)
     if (DMA_GetITStatus(DMA1_IT_TC1) != RESET)
     {
         V = ADC_ConvertedValue[0];
-        adc_v = (float)V * (3.3 / 4096);
-        V = adc_v_Temp * 1000;
-        printf("d:%d\n", V);
+        adc_light = (float)V * (3.3 / 4096);
+        printf("adc_light:%d\n", V);
 
         V = ADC_ConvertedValue[1];
-        adc_v = (float)V * (3.3 / 4096);
-        V = adc_v_Temp * 1000;
-        printf("d:%d\n", V);
+        adc_temp = (float)V * (3.3 / 4096);
+        printf("adc_temp:%d\n", V);
 
         DMA_ClearITPendingBit(DMA1_IT_TC1);
     }
