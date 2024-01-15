@@ -34,6 +34,8 @@
 "..\..\output\bsp_light.o"
 "..\..\output\bsp_temperature.o"
 "..\..\output\bsp_w25q64.o"
+"..\..\output\pwm_timer.o"
+"..\..\output\bsp_timer.o"
 "..\..\output\port.o"
 "..\..\output\heap_4.o"
 "..\..\output\croutine.o"

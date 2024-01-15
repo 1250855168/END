@@ -609,6 +609,16 @@
               <FileType>1</FileType>
               <FilePath>..\..\User\led\bsp_w25q64.c</FilePath>
             </File>
+            <File>
+              <FileName>pwm_timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\led\pwm_timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\led\bsp_timer.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
