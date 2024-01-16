@@ -46,3 +46,4 @@
 ..\..\output\main.o: ..\..\User\led\bsp_w25q64.h
 ..\..\output\main.o: ..\..\User\led\bsp_timer.h
 ..\..\output\main.o: ..\..\User\led\pwm_timer.h
+..\..\output\main.o: ..\..\User\led\bsp_Adc.h

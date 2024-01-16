@@ -10,8 +10,8 @@ extern u16 adc_temp;
 // 定义目标温度和初始温度
 float targetTemperature = 45.0;  // 目标温度
 float currentTemperature = 0.0;  // 当前温度
-float PWM_Min = 50;
-float PWM_Max = 950;
+float PWM_Min = 5000;
+float PWM_Max = 95000;
 
 // 定义PWM输出参数
 //uint16_t pwmPeriod = 1000;  // PWM周期
@@ -36,14 +36,14 @@ void setPWM(uint16_t dutyCycle)
 
     pwmDutyCycle = pwmDutyCycle + (pidController(targetTemperature,currentTemperature))/1000;
 
-   if (pwmDutyCycle<150)
+   if (pwmDutyCycle<PWM_Min)
    {
         pwmDutyCycle = PWM_Min;
 
         TIM_OCInitStructure.TIM_Pulse = pwmDutyCycle;
    }
    
-    if (pwmDutyCycle>1000)
+    if (pwmDutyCycle>PWM_Max)
    {
         pwmDutyCycle = PWM_Max;
 

@@ -56,7 +56,7 @@ void bsp_pwm_init(void)
 	
 	/* 基本初始化 */
 	TIM_TimeBaseStructInit(&TIM_TimeBaseStructure);
-	TIM_TimeBaseStructure.TIM_Period        = 1000 - 1;
+	TIM_TimeBaseStructure.TIM_Period        = 10000 - 1;
 	TIM_TimeBaseStructure.TIM_Prescaler     = 0;
 	TIM_TimeBaseStructure.TIM_ClockDivision = TIM_CKD_DIV1;
 	TIM_TimeBaseStructure.TIM_CounterMode   = TIM_CounterMode_Up;
@@ -91,7 +91,7 @@ void bsp_pwm_init(void)
 	TIM_BDTRInitStructure.TIM_LOCKLevel       = TIM_LOCKLevel_1;
 	TIM_BDTRInitStructure.TIM_DeadTime        = 0;
 	TIM_BDTRInitStructure.TIM_Break           = TIM_Break_Enable;
-	TIM_BDTRInitStructure.TIM_BreakPolarity   = TIM_BreakPolarity_High;
+	TIM_BDTRInitStructure.TIM_BreakPolarity   = TIM_BreakPolarity_Low;
 	TIM_BDTRInitStructure.TIM_AutomaticOutput = TIM_AutomaticOutput_Enable;
 	TIM_BDTRInitStructure.TIM_DeadTime = 0x8f;
 	TIM_BDTRConfig(TIM1, &TIM_BDTRInitStructure);

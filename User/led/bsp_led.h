@@ -14,8 +14,8 @@
   * 1 - off
   *0 - on
   */
-#define ON  0
-#define OFF 1
+#define ON  1
+#define OFF 0
 
 
 #define LED2(a)	if (a)	\

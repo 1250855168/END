@@ -2,6 +2,7 @@
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
         "bsp_usart.h": "c",
-        "stm32f10x.h": "c"
+        "stm32f10x.h": "c",
+        "bsp_adc.h": "c"
     }
 }

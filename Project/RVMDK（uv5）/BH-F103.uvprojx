@@ -595,16 +595,6 @@
               <FilePath>..\..\User\led\codetab.h</FilePath>
             </File>
             <File>
-              <FileName>bsp_light.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\User\led\bsp_light.c</FilePath>
-            </File>
-            <File>
-              <FileName>bsp_temperature.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\User\led\bsp_temperature.c</FilePath>
-            </File>
-            <File>
               <FileName>bsp_w25q64.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\User\led\bsp_w25q64.c</FilePath>
@@ -618,6 +608,11 @@
               <FileName>bsp_timer.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\User\led\bsp_timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_Adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\led\bsp_Adc.c</FilePath>
             </File>
           </Files>
         </Group>

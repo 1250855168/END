@@ -136,7 +136,7 @@ void OLED_CLOSE(void)
 }
 
 //OLED显示字符串
-void OLED_ShowStr(unsigned char x,unsigned char y,unsigned char ch[],unsigned char TextSize)	
+void OLED_ShowStr(unsigned char x,unsigned char y,char ch[],unsigned char TextSize)	
 {//传参，x y 分别代表列和页  ch[] 代表字符串  TextSize代表显示字符串大小
 	unsigned char c = 0,i=0,j=0;
 	switch(TextSize)

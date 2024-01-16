@@ -45,8 +45,8 @@ void TIM5_Cap_Init(u16 arr,u16 psc)
 	
 	//中断分组初始化
 	NVIC_InitStructure.NVIC_IRQChannel = TIM5_IRQn;  //TIM3中断
-	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 2;  //先占优先级2级
-	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;  //从优先级0级
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;  //先占优先级2级
+	//NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;  //从优先级0级
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE; //IRQ通道被使能
 	NVIC_Init(&NVIC_InitStructure);  //根据NVIC_InitStruct中指定的参数初始化外设NVIC寄存器 
 	

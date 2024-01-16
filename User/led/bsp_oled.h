@@ -33,6 +33,6 @@ void OLED_CLOSE(void);
 
 
 //OLED显示字符串
-void OLED_ShowStr(unsigned char x,unsigned char y,unsigned char ch[],unsigned char TextSize);
+void OLED_ShowStr(unsigned char x,unsigned char y,char ch[],unsigned char TextSize);
 
 #endif

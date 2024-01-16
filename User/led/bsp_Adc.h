@@ -2,8 +2,10 @@
 #define BSP_Adc_H
 
 #include "stm32f10x.h"
-#include<stdio.h>
+#include <stdio.h>
 
-void Init_adc();
+void Adc_Init(void);
+
+void DMA1_Init(void);
 
 #endif
