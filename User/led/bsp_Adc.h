@@ -4,8 +4,6 @@
 #include "stm32f10x.h"
 #include <stdio.h>
 
-void Adc_Init(void);
-
-void DMA1_Init(void);
+void My_ADC_Init();
 
 #endif

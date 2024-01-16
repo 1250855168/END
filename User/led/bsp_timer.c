@@ -47,13 +47,13 @@ void TIM2_IRQHandler(void)
     if (TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET)
     {
         // 在这里执行定时器溢出时的任务或回调函数
-        sprintf(light, "light:%d\r\n", AD_Value[0]);
+         sprintf(light, "light:%d", AD_Value[0]);
         OLED_ShowStr(1, 1, light, 1);
         printf("light:%d\r\n", AD_Value[0]);
 
-        sprintf(temp, "temp:%d\r\n", AD_Value[1]);
+        sprintf(temp, "temp:%d", AD_Value[1]);
         OLED_ShowStr(1, 2, temp, 1);
-        printf("light:%d\r\n", AD_Value[0]); 
+        printf("temp:%d\r\n", AD_Value[1]); 
 
         // 清除中断标志
         TIM_ClearITPendingBit(TIM2, TIM_IT_Update);

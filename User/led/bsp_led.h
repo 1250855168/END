@@ -5,10 +5,10 @@
 #include "stm32f10x.h"    
 
 #define LED2_GPIO_PORT    	GPIOA			              /* GPIO端口 */
-#define LED2_GPIO_PIN		GPIO_Pin_2			        
+#define LED2_GPIO_PIN		GPIO_Pin_9			        
 
 #define LED3_GPIO_PORT    	GPIOA			              /* GPIO端口 */
-#define LED3_GPIO_PIN		GPIO_Pin_3			 
+#define LED3_GPIO_PIN		GPIO_Pin_10			 
 
 /** the macro definition to trigger the led on or off 
   * 1 - off
@@ -18,12 +18,12 @@
 #define OFF 0
 
 
-#define LED2(a)	if (a)	\
+#define RED_LED(a)	if (a)	\
 					GPIO_SetBits(LED2_GPIO_PORT,LED2_GPIO_PIN);\
 					else		\
 					GPIO_ResetBits(LED2_GPIO_PORT,LED2_GPIO_PIN)
           
-#define LED3(a)	if (a)	\
+#define GREEN_LED(a)	if (a)	\
 					GPIO_SetBits(LED3_GPIO_PORT,LED3_GPIO_PIN);\
 					else		\
 					GPIO_ResetBits(LED3_GPIO_PORT,LED3_GPIO_PIN)
