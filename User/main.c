@@ -37,11 +37,11 @@ int main(void)
 
 	SPI1_Init();
 
-	W25Q128_Erase_Chip();
+	// W25Q128_Erase_Chip();
 
-	W25Q128_Write_Page(Write_data, 0x00, 20);
+	// W25Q128_Write_Page(Write_data, 0x00, 20);
 
-	W25Q128_Read(Read_data, 0x00, 20);
+	// W25Q128_Read(Read_data, 0x00, 20);
 
 	My_ADC_Init();
 
