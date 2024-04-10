@@ -35,6 +35,7 @@
 "..\..\output\pwm_timer.o"
 "..\..\output\bsp_timer.o"
 "..\..\output\bsp_adc.o"
+"..\..\output\bsp_pid.o"
 "..\..\output\port.o"
 "..\..\output\heap_4.o"
 "..\..\output\croutine.o"

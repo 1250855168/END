@@ -11,6 +11,7 @@
 #include "bsp_timer.h"
 #include "pwm_timer.h"
 #include "bsp_Adc.h"
+#include "bsp_pid.h"
 
 uint8_t Write_data[20] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
 
@@ -50,6 +51,8 @@ int main(void)
 	bsp_pwm_init();
 
 	GREEN_LED(ON);
+	
+	PID_init();
 
 	while (1)
 	{

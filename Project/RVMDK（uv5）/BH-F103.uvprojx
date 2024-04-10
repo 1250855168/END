@@ -590,11 +590,6 @@
               <FilePath>..\..\User\led\bsp_oled.c</FilePath>
             </File>
             <File>
-              <FileName>codetab.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\User\led\codetab.h</FilePath>
-            </File>
-            <File>
               <FileName>bsp_w25q64.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\User\led\bsp_w25q64.c</FilePath>
@@ -613,6 +608,11 @@
               <FileName>bsp_Adc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\User\led\bsp_Adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_pid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\bsp_pid.c</FilePath>
             </File>
           </Files>
         </Group>

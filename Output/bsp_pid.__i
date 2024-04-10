@@ -1,0 +1,4 @@
+--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\Libraries\CMSIS -I ..\..\User -I ..\..\Libraries\FWlib\inc -I ..\..\User\led -I ..\..\FreeRTOS\include -I ..\..\FreeRTOS\port\RVDS\ARM_CM3
+-IC:\Users\ych\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include
+-D__UVISION_VERSION="538" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER
+-o ..\..\output\bsp_pid.o --omf_browse ..\..\output\bsp_pid.crf --depend ..\..\output\bsp_pid.d "bsp_pid.c"

@@ -31,3 +31,4 @@
 ..\..\output\bsp_timer.o: ..\..\Libraries\FWlib\inc\misc.h
 ..\..\output\bsp_timer.o: C:\Keil_v5\ARM\ARM5.06\Bin\..\include\stdio.h
 ..\..\output\bsp_timer.o: ..\..\User\led\bsp_oled.h
+..\..\output\bsp_timer.o: ..\..\User\led\bsp_pid.h

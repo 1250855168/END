@@ -47,3 +47,4 @@
 ..\..\output\main.o: ..\..\User\led\bsp_timer.h
 ..\..\output\main.o: ..\..\User\led\pwm_timer.h
 ..\..\output\main.o: ..\..\User\led\bsp_Adc.h
+..\..\output\main.o: ..\..\User\led\bsp_pid.h

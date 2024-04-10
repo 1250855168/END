@@ -1,6 +1,7 @@
 #include "bsp_timer.h"
 #include <stdio.h>
 #include "bsp_oled.h"
+#include "bsp_pid.h"
 
 extern uint16_t AD_Value[2];
 
@@ -46,6 +47,8 @@ void TIM2_IRQHandler(void)
 
     if (TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET)
     {
+				PID_realize(AD_Value[0]);
+			
         // 在这里执行定时器溢出时的任务或回调函数
          sprintf(light, "light:%d", AD_Value[0]);
         OLED_ShowStr(1, 1, light, 1);
