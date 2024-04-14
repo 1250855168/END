@@ -612,7 +612,7 @@
             <File>
               <FileName>bsp_pid.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\bsp_pid.c</FilePath>
+              <FilePath>..\..\User\led\bsp_pid.c</FilePath>
             </File>
           </Files>
         </Group>

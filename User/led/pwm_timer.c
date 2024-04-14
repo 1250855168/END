@@ -23,11 +23,12 @@
 最后，使用 TIM_Cmd 函数使能TIM1定时器和PWM输出，使用 TIM_CtrlPWMOutputs 函数使能TIM1的PWM通道输出
 */
 
+TIM_TimeBaseInitTypeDef TIM_TimeBaseStructure;
+TIM_OCInitTypeDef       TIM_OCInitStructure;
+
 void bsp_pwm_init(void)
 {
 	GPIO_InitTypeDef        GPIO_InitStructure;
-	TIM_TimeBaseInitTypeDef TIM_TimeBaseStructure;
-	TIM_OCInitTypeDef       TIM_OCInitStructure;
 	TIM_BDTRInitTypeDef     TIM_BDTRInitStructure;
 	
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO | RCC_APB2Periph_GPIOA | RCC_APB2Periph_GPIOB, ENABLE);
@@ -56,7 +57,7 @@ void bsp_pwm_init(void)
 	
 	/* 基本初始化 */
 	TIM_TimeBaseStructInit(&TIM_TimeBaseStructure);
-	TIM_TimeBaseStructure.TIM_Period        = 10000 - 1;
+	TIM_TimeBaseStructure.TIM_Period        = 1000 - 1;
 	TIM_TimeBaseStructure.TIM_Prescaler     = 0;
 	TIM_TimeBaseStructure.TIM_ClockDivision = TIM_CKD_DIV1;
 	TIM_TimeBaseStructure.TIM_CounterMode   = TIM_CounterMode_Up;

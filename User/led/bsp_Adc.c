@@ -2,7 +2,7 @@
 
 uint16_t AD_Value[2];
  
-void My_ADC_Init()
+void My_ADC_Init(void)
 {
  	 GPIO_InitTypeDef GPIO_InitStruct;
 	ADC_InitTypeDef ADC_InitStruct;

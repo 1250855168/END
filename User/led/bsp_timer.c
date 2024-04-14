@@ -47,7 +47,7 @@ void TIM2_IRQHandler(void)
 
     if (TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET)
     {
-				PID_realize(AD_Value[0]);
+				//PID_realize(AD_Value[0]);
 			
         // 在这里执行定时器溢出时的任务或回调函数
          sprintf(light, "light:%d", AD_Value[0]);

@@ -1,11 +1,14 @@
 #include"bsp_pid.h"
+#include"pwm_timer.h"
+#include "bsp_Adc.h"
 
 // 定义PID控制器参数
 float kp = 0.5;  // 比例系数
 float ki = 0.2;  // 积分系数
 float kd = 0.1;  // 微分系数
 
-extern u16 adc_temp;
+
+
 
 // 定义目标温度和初始温度
 float targetTemperature = 45.0;  // 目标温度
@@ -18,11 +21,11 @@ float PWM_Max = 95000;
 uint16_t pwmDutyCycle = 0;  // PWM占空比
 
 // ADC读取温度值
-float readTemperature()
+float readTemperature(void)
 {
     // 在此处编写读取ADC传感器并转换为温度值的代码
     // 返回读取到的温度值
-    currentTemperature =((1.43 - adc_temp)/0.0043+25.0);
+    currentTemperature =((1.43 - AD_Value[0])/0.0043+25.0);
 
     return currentTemperature;
 

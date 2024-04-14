@@ -4,6 +4,8 @@
 #include "stm32f10x.h"
 #include <stdio.h>
 
-void My_ADC_Init();
+extern uint16_t AD_Value[2];
+
+void My_ADC_Init(void);
 
 #endif

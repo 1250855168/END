@@ -660,7 +660,7 @@
       <GroupNumber>4</GroupNumber>
       <FileNumber>36</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\User\led\bsp_usart.c</PathWithFileName>
@@ -744,10 +744,10 @@
       <GroupNumber>4</GroupNumber>
       <FileNumber>43</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\bsp_pid.c</PathWithFileName>
+      <PathWithFileName>..\..\User\led\bsp_pid.c</PathWithFileName>
       <FilenameWithoutPath>bsp_pid.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>

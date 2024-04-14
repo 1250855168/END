@@ -51,8 +51,6 @@ int main(void)
 	bsp_pwm_init();
 
 	GREEN_LED(ON);
-	
-	PID_init();
 
 	while (1)
 	{
