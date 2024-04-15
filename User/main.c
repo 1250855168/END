@@ -26,8 +26,6 @@ int main(void)
 
 	LED_GPIO_Config();
 
- printf("%s(%d)-<%s>\r\n", __FILE__, __LINE__, __FUNCTION__);
-
 	I2C_Configuration();
 
 	 OLED_Init();
@@ -37,12 +35,6 @@ int main(void)
 	 OLED_Fill(0);
 
 	SPI1_Init();
-
-	// W25Q128_Erase_Chip();
-
-	// W25Q128_Write_Page(Write_data, 0x00, 20);
-
-	// W25Q128_Read(Read_data, 0x00, 20);
 
 	My_ADC_Init();
 
